@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Garsonum_Design.Authentication.SignUp"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <StackLayout Grid.Row="0">
+                <Label TextColor="#264065" Text="Üye Ol" FontSize="35" FontFamily="{StaticResource MainFont}" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" VerticalOptions="CenterAndExpand"></Label>
+            </StackLayout>
+
+            <StackLayout Grid.Row="1" Margin="20,0,20,7">
+                <StackLayout Orientation="Horizontal">
+                    <Label TextColor="#264065" FontSize="20" VerticalOptions="Center" HorizontalOptions="Start" Text="&#xf007; " FontFamily="{StaticResource BrandRegularSolidFree}"></Label>
+                    <Entry HorizontalOptions="FillAndExpand" FontSize="25" TextColor="Black" FontFamily="{StaticResource MainFont}" PlaceholderColor="Silver" Placeholder="Ad Soyad"></Entry>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label TextColor="#264065" FontSize="20" VerticalOptions="Center" HorizontalOptions="Start" Text="envelope" FontFamily="{StaticResource BrandRegularSolidFree}"></Label>
+                    <Entry HorizontalOptions="FillAndExpand" FontSize="25" TextColor="Black" FontFamily="{StaticResource MainFont}" PlaceholderColor="Silver" Placeholder="Email"></Entry>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label TextColor="#264065" FontSize="20" VerticalOptions="Center" HorizontalOptions="Start" Text="phone" FontFamily="{StaticResource BrandRegularSolidFree}"></Label>
+                    <Entry HorizontalOptions="FillAndExpand" FontSize="25" TextColor="Black" FontFamily="{StaticResource MainFont}" PlaceholderColor="Silver" Placeholder="Telefon"></Entry>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label TextColor="#264065" FontSize="20" VerticalOptions="Center" HorizontalOptions="Start" Text="key" FontFamily="{StaticResource BrandRegularSolidFree}"></Label>
+                    <Entry HorizontalOptions="FillAndExpand" FontSize="25" TextColor="Black" FontFamily="{StaticResource MainFont}" PlaceholderColor="Silver" Placeholder="Şifre"></Entry>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout Grid.Row="2">
+                <Button HeightRequest="45" FontSize="20" TextColor="White" FontFamily="{StaticResource MainFont}"
+                        Margin="20,0,20,0" BackgroundColor="#264065" 
+                        Text="Kayıt Ol" HorizontalOptions="FillAndExpand" CornerRadius="15" ></Button>
+            </StackLayout>
+
+            <StackLayout Grid.Row="3" HorizontalOptions="FillAndExpand" Margin="10,0,10,0">
+                <StackLayout Orientation="Horizontal" VerticalOptions="StartAndExpand">
+                    <Button FontSize="17" HorizontalOptions="EndAndExpand" TextColor="#F05F5F" Text="Google" BackgroundColor="Transparent"/>
+                    <BoxView Margin="0,5,0,5" VerticalOptions="FillAndExpand" BackgroundColor="Silver" WidthRequest="1" ></BoxView>
+                    <Button FontSize="17" HorizontalOptions="FillAndExpand" TextColor="#3884C6" Text="Facebook" BackgroundColor="Transparent"/>
+                    <BoxView Margin="0,5,0,5" VerticalOptions="FillAndExpand" BackgroundColor="Silver" WidthRequest="1" ></BoxView>
+                    <Button FontSize="17" HorizontalOptions="StartAndExpand" TextColor="#4CAAFC" Text="Twitter" BackgroundColor="Transparent"/>
+                </StackLayout>
+                <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand" Orientation="Horizontal" Margin="20,-10,0,0">
+                    <Button FontSize="15" Text="Hesabın var mı?" BackgroundColor="Transparent" FontFamily="{StaticResource RegularFont}" TextColor="Silver" Margin="0,0,-15,0"></Button>
+                    <Button FontSize="15" x:Name="Btn_GrsYp" FontFamily="{StaticResource RegularFont}" Clicked="Btn_GrsYp_OnClicked" BackgroundColor="Transparent" Margin="-15,0,0,0" Text="Giriş Yap" TextColor="Gray"></Button>
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

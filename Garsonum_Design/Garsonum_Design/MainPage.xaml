@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Garsonum_Design"
+             x:Class="Garsonum_Design.MainPage"
+             NavigationPage.HasNavigationBar="False">
+
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <StackLayout Grid.Row="0">
+            <Image Source="hm.png" VerticalOptions="EndAndExpand" HorizontalOptions="Center" Aspect="AspectFill" HeightRequest="200"></Image>
+            </StackLayout>
+
+            <StackLayout Grid.Row="1">
+                <Label TextColor="#264065" FontSize="40" FontFamily="{StaticResource MainFont}" Margin="0,0,0,10" Text="G A R S O N U M" HorizontalTextAlignment="Center"/>
+                <StackLayout Margin="20,0,20,5" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                    <Button Margin="0,0,5,0" TextColor="#264065" x:Name="BtnGrsYp" Clicked="BtnGrsYp_OnClicked" FontSize="20" FontFamily="{StaticResource MainFont}" BackgroundColor="Transparent" 
+                            BorderWidth="0.9" BorderColor="#264065" CornerRadius="15" HorizontalOptions="FillAndExpand" Text="Giriş Yap">
+                    </Button>
+                    <BoxView Margin="0,5,0,5" VerticalOptions="FillAndExpand" BackgroundColor="Silver" WidthRequest="1" ></BoxView>
+                    <Button Margin="5,0,0,0" TextColor="#264065" x:Name="BtnSgnUp" Clicked="BtnSgnUp_OnClicked" FontSize="20" FontFamily="{StaticResource MainFont}" 
+                            BackgroundColor="Transparent" BorderWidth="0.9" BorderColor="#264065" CornerRadius="15" HorizontalOptions="FillAndExpand" Text="Üye Ol">
+
+                    </Button>
+                </StackLayout>
+
+                <Button x:Name="Btn_Mknlr" FontSize="20" TextColor="#264065" FontFamily="{StaticResource MainFont}" BackgroundColor="Transparent" BorderWidth="0.9" BorderColor="#264065" Margin="20,0,20,0" 
+                        CornerRadius="15" HorizontalOptions="FillAndExpand" Text="Mekanlar" Clicked="Btn_Mknlr_OnClicked">
+
+                </Button>
+
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+
+</ContentPage>

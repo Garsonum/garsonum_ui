@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Garsonum_Design.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <OnPlatform x:TypeArguments="x:String" x:Key="MainFont">
+                <On Platform="Android" Value="Akrobat-Regular.otf#Akrobat"></On>
+                <On Platform="iOS" Value="Akrobat"></On>
+            </OnPlatform>
+            <OnPlatform x:TypeArguments="x:String" x:Key="RegularFont">
+                <On Platform="Android" Value="Roboto-Regular.ttf#Roboto"></On>
+                <On Platform="iOS" Value="Roboto"></On>
+            </OnPlatform>
+            <OnPlatform x:TypeArguments="x:String" x:Key="Cocogoose">
+                <On Platform="Android" Value="Cocogoose Pro Thin-trial.ttf#Cocogoose Pro Thin"></On>
+                <On Platform="iOS" Value="Cocogoose Pro Thin"></On>
+            </OnPlatform>
+            <OnPlatform x:TypeArguments="x:String" x:Key="BrandRegular">
+                <On Platform="Android" Value="Font Awesome 5 Brands-Regular-400.otf#Font Awesome 5 Brands Regular"></On>
+                <On Platform="iOS" Value="Font Awesome 5 Brands Regular"></On>
+            </OnPlatform>
+            <OnPlatform x:TypeArguments="x:String" x:Key="BrandRegularFree">
+                <On Platform="Android" Value="Font Awesome 5 Free-Regular-400.otf#Font Awesome 5 Free Regular"></On>
+                <On Platform="iOS" Value="Font Awesome 5 Free Regular"></On>
+            </OnPlatform>
+            <OnPlatform x:TypeArguments="x:String" x:Key="BrandRegularSolidFree">
+                <On Platform="Android" Value="Font Awesome 5 Free-Solid-900.otf#Font Awesome 5 Free Solid"></On>
+                <On Platform="iOS" Value="Font Awesome 5 Free Solid"></On>
+            </OnPlatform>
+            <OnPlatform x:TypeArguments="x:String" x:Key="LemonMilkLight">
+                <On Platform="Android" Value="LemonMilklight.otf#Lemon/Milk light"></On>
+                <On Platform="iOS" Value="Lemon/Milk light"></On>
+            </OnPlatform>
+        </ResourceDictionary>
+
+    </Application.Resources>
+</Application>

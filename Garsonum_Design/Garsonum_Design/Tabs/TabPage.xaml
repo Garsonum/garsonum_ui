@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:tabs="clr-namespace:Garsonum_Design.Tabs;assembly=Garsonum_Design"
+             xmlns:androidSpecific="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+             x:Class="Garsonum_Design.Tabs.TabPage"
+            Title="yaz kızım"
+            androidSpecific:TabbedPage.ToolbarPlacement="Bottom">
+
+    <TabbedPage.ToolbarItems>
+        <ToolbarItem Text="nö" Priority="0" Order="Secondary"></ToolbarItem>
+        <ToolbarItem Text="bö" Priority="1" Order="Secondary"></ToolbarItem>
+        <ToolbarItem Text="zö" Priority="2" Order="Secondary"></ToolbarItem>
+        <ToolbarItem Text="dö" Priority="3" Order="Secondary"></ToolbarItem>
+    </TabbedPage.ToolbarItems>
+   
+    <tabs:HotDrinks Title="Hot Tamale"/>
+    <tabs:ColdDrinks Title="Cold Tamale"/>
+    <tabs:Pizzas Title="Pizzaağ"/>
+</TabbedPage>
